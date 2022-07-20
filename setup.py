@@ -12,7 +12,8 @@ with open(version_path) as fp:
 setup(name='freecad.FCKeyboard',
       version=str(__version__),
       packages=['freecad',
-                'freecad.FCKeyboard'],
+                'freecad.FCKeyboard'
+                'freecad.FCKeyboard.kle'],
       maintainer="ThomasPDye",
       maintainer_email="tompdye@googlemail.com",
       url="https://github.com/ThomasPDye/FCKeyboard",

@@ -22,7 +22,7 @@ class KeyboardWorkbench(Gui.Workbench):
         This function is called at the first activation of the workbench.
         here is the place to import all the commands
         """
-        from klepy import keyboard
+        from freecad.FCKeyboard.kle import keyboard
         App.Console.PrintMessage("switching to FCKeyboard\n")
 
         self.appendToolbar("Tools", self.toolbox)
