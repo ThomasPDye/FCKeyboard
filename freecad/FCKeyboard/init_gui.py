@@ -1,16 +1,16 @@
 import os
 import FreeCADGui as Gui
 import FreeCAD as App
-from freecad.workbench_starterkit import ICONPATH
+from freecad.FCKeyboard import ICONPATH
 
 
-class TemplateWorkbench(Gui.Workbench):
+class KeyboardWorkbench(Gui.Workbench):
     """
     class which gets initiated at startup of the gui
     """
 
-    MenuText = "template workbench"
-    ToolTip = "a simple template workbench"
+    MenuText = "Keyboard Workbench"
+    ToolTip = "a simple keyboard workbench"
     Icon = os.path.join(ICONPATH, "template_resource.svg")
     toolbox = []
 
@@ -22,9 +22,8 @@ class TemplateWorkbench(Gui.Workbench):
         This function is called at the first activation of the workbench.
         here is the place to import all the commands
         """
-        from freecad.workbench_starterkit import my_numpy_function
-        App.Console.PrintMessage("switching to workbench_starterkit\n")
-        App.Console.PrintMessage("run a numpy function: sqrt(100) = {}\n".format(my_numpy_function.my_foo(100)))
+        from freecad.FCKeyboard.klepy import keyboard
+        App.Console.PrintMessage("switching to FCKeyboard\n")
 
         self.appendToolbar("Tools", self.toolbox)
         self.appendMenu("Tools", self.toolbox)
@@ -42,4 +41,4 @@ class TemplateWorkbench(Gui.Workbench):
         pass
 
 
-Gui.addWorkbench(TemplateWorkbench())
+Gui.addWorkbench(KeyboardWorkbench())

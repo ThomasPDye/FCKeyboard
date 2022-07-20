@@ -1,0 +1,3 @@
+[submodule "freecad/workbench_starterkit/klepy"]
+	path = freecad/workbench_starterkit/klepy
+	url = https://github.com/ThomasPDye/klepy.git
