@@ -12,10 +12,10 @@ with open(version_path) as fp:
 setup(name='freecad.FCKeyboard',
       version=str(__version__),
       packages=['freecad',
-                'freecad.FCKeyboard'],
+                'freecad.FCKeyboard',
+                'freecad.FCKeyboard.klepy'],
       maintainer="ThomasPDye",
       maintainer_email="tompdye@googlemail.com",
       url="https://github.com/ThomasPDye/FCKeyboard",
       description="a freecad extension for creating keyboards",
-      install_requires=['pyjson5'],
       include_package_data=True)
