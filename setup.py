@@ -1,6 +1,6 @@
 from setuptools import setup
 import os
-# from freecad.workbench_starterkit.version import __version__
+# from freecad.FCKeyboard.version import __version__
 # name: this is the name of the distribution.
 # Packages using the same name here cannot be installed together
 
