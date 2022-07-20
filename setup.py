@@ -18,4 +18,5 @@ setup(name='freecad.FCKeyboard',
       maintainer_email="tompdye@googlemail.com",
       url="https://github.com/ThomasPDye/FCKeyboard",
       description="a freecad extension for creating keyboards",
+      install_requires=['pyjson5'],
       include_package_data=True)
